@@ -213,7 +213,7 @@ main button {
     margin: 50px 0;
   }
   main h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   main button {
     cursor: pointer;
@@ -274,7 +274,7 @@ main button {
   .intro {
     margin: 0 0;
     padding-left: 100px;
-    width: 45%;
+    width: 40%;
   }
   .img_devices::after {
     height: 52vh;
