@@ -1,0 +1,201 @@
+@import reset
+
+// Colors-Primary
+$Red: hsl(0, 100%, 68%)
+// Colors-Neutral
+$veryDarkBlue: hsl(230, 29%, 20%)
+$darkGrayishBlue: hsl(230, 11%, 40%)
+$grayishBlue: hsl(231, 7%, 65%)
+$lightGrayishBlue: hsl(207, 33%, 95%)
+// font-size
+$fontsize: 18px    
+//Font-Family
+$fontbarlowCondensed: 'Barlow Condensed', sans-serif
+$fontBarlow: 'Barlow', sans-serif
+nav
+    display: flex
+    justify-content: space-between
+    text-align: center
+    margin: 20px 35px
+    position: relative
+    z-index: 1
+    ul
+        display: none
+        flex-direction: column
+        width: 80%
+        list-style-type: none
+        position: absolute
+        top: 100%
+        left: 50%
+        margin-top: 10px
+        transform: translateX(-50%)
+        box-shadow: 0 0 10px $darkGrayishBlue
+        a
+            display: flex
+            justify-content: center
+            font-size: 1.1rem
+            padding: 15px 0
+            text-decoration: none
+            font-family: $fontbarlowCondensed
+            font-weight: 700
+            text-transform: uppercase
+            color: $darkGrayishBlue
+            background-color: white
+.nav_show
+    display: flex
+.nav-login
+    color: $grayishBlue
+    position: relative
+    padding: 20px 0
+.nav-login::before
+    content: ""
+    position: absolute
+    height: 2px
+    background-color: $lightGrayishBlue
+    top: 0
+    width: 80%
+    margin: 0 auto
+.menu-btn
+    background-color: transparent
+    border: transparent
+    margin-right: 5px
+.menu-btn i
+    font-size: 25px
+    padding: 0 5px
+.fa-times
+    display: none
+main
+    display: flex
+    flex-direction: column
+    h1
+        font-size: 0.8rem
+        font-family: $fontBarlow
+        text-transform: uppercase
+        font-weight: 400
+        margin-top: 70px
+        color: $darkGrayishBlue
+        letter-spacing: 3px
+        position: relative
+    h2
+        font-family: $fontbarlowCondensed
+        margin: 25px 0
+        font-size: 2.5rem
+        font-weight: bold
+        color: $veryDarkBlue
+        text-transform: uppercase
+    p
+        margin: 25px 0
+        font-family: $fontBarlow
+    button
+        font-family: $fontbarlowCondensed
+        text-transform: uppercase
+        color: white
+        font-size: 1rem
+        font-weight: bold
+        padding: 12px 25px
+        border: transparent
+        background-color: $Red
+        border-radius: 8px
+        margin-right: 15px
+.live_preview
+    text-transform: uppercase
+    font-family: $fontbarlowCondensed
+    color: $grayishBlue
+.new
+    background-color: $veryDarkBlue
+    color: white
+    font-weight: 700
+    border-radius: 25px
+    padding: 8px 11px
+    margin-right: 10px
+    letter-spacing: 0
+.intro
+    order: 2
+    margin: 25px
+.img_devices::after
+    content: ""
+    height: 52vh
+    background-color: $lightGrayishBlue
+    width: 50%
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -1
+    border-bottom-left-radius: 40px
+.img_devices
+    overflow-x: hidden
+.img_devices img
+    height: 35vh
+    order: 1
+    margin-left: 20px
+.attribution
+    font-size: 11px
+    text-align: center
+.attribution a 
+    color: hsl(228, 45%, 44%)
+@media (min-width: 1025px)
+    body
+        min-height: 100vh
+    .img_devices img
+        height: 55vh
+        margin-left: 26vw
+    main
+        flex-direction: row-reverse
+        justify-content: space-between
+        margin: 50px 0 
+        h2
+            font-size: 4rem
+        button
+            cursor: pointer
+            transition: opacity .5s
+            margin-bottom: 3px
+        button:hover
+            opacity: 0.8
+        p
+            width: 50%
+            margin-bottom: 80px
+            color: $darkGrayishBlue
+            font-size: 1.1rem
+    nav
+        display: flex
+        margin: 0 0
+        padding: 50px 0
+        ul
+            display: flex
+            justify-content: flex-end
+            flex-direction: row
+            position: static
+            margin-top: 0
+            transform: translateX(0)
+            box-shadow: 0 0 0
+            margin-right: 8vw
+            a
+                padding: 0 0
+                background-color: transparent
+                margin: 0 30px
+    .nav-login
+        padding: 0 0
+        margin-left: 2vw
+    .menu-btn
+        display: none
+    .brand
+        padding-left: 100px
+    .intro
+        margin: 0 0
+        padding-left: 100px
+        width: 45%
+    .img_devices::after
+        height: 52vh
+        width: 45%
+        border-bottom-left-radius: 60px
+    .nav-login::before
+        height: 7px
+        background-color: $grayishBlue
+        left: -100%
+        top: 50%
+        transform: translateY(-50%)
+        width: 7px
+        border-radius: 50%
+        cursor: auto
+    .live_preview
+        letter-spacing: 7px
